@@ -2,16 +2,6 @@
 
 [![Generic badge](https://img.shields.io/badge/license-MIT-blue)](https://shields.io/)
 
-<hr>
-
-Home Page:
-![Home Page](public/img/home.png)
-
-Dashboard/Stats Page:
-![Dashboard Page](public/img/dashboard.png)
-
-<hr>
-
 ## Description
 
 A fitness application that allows you to keep track of your daily workouts. You can add and update exercises to a workout plan based on the type of exercise: resistance or cardio.
@@ -36,6 +26,12 @@ Run 'npm install' in the terminal to install the necessary dependencies (express
 Run 'npm start' in terminal and enter 'localhost:3000' in your web browser,
 
 or click the Heroku link here: <https://secret-gorge-37389.herokuapp.com/>
+
+Home Page:
+![Home Page](public/img/home.png)
+
+Dashboard/Stats Page:
+![Dashboard Page](public/img/dashboard.png)
 
 ## Questions
 
