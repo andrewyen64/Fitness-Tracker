@@ -15,8 +15,16 @@ app.use(express.json());
 
 app.use(express.static('public'));
 
-// Connects to MongoDB with Mongoose
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout-tracker", { useNewUrlParser: true, useUnifiedTopology: true, });
+// Connects to MongoDB/Mongoose with env and MongoAtlas
+mongoose.connect(
+    process.env.MONGODB_URI || "mongodb://localhost/workout-tracker", 
+    { 
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+    }
+);
 
 // HTML and API Routes
 require("./routes/apiRoutes")(app);
